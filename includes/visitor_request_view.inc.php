@@ -31,6 +31,7 @@
               <tr>
                 <th class="w-1/8 px-8 py-2">Prisoner ID</th>
                 <th class="w-1/8 px-8 py-2">Visitor Username</th>
+                <th class="w-1/8 px-8 py-2">Request Status</th>
               </tr>
             </thead>
             <tbody>
@@ -41,6 +42,7 @@
               <tr>
                 <td class="border px-4 py-2"><?php echo$row['pid']."<br>";?></td>
                 <td class="border px-4 py-2"><?php echo$row['vuname']."<br>";?></td>
+                <td class="border px-4 py-2"><?php echo$row['status']."<br>";?></td>
               </tr>
              
 

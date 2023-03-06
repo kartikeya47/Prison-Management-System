@@ -1,6 +1,6 @@
 <?php
 
-$servername="localhost";
+$servername="localhost:4306";
 $dBUsername="root";
 $dBPassword="";
 $dBName="prisondb";
