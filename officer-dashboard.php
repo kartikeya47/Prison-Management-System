@@ -35,7 +35,7 @@
             </div>
             <div class="flex-grow pl-6">
               <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Add a Visitor</h2>
-              <p class="leading-relaxed text-base">Add a visitor .</p>
+              <p class="leading-relaxed text-base">Add a visitor</p>
               <a class="mt-3 text-indigo-500 inline-flex items-center"href="./visitor.php">Add Visitor
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -50,7 +50,7 @@
           </div>
           <div class="flex-grow pl-6">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Add a Jailor</h2>
-            <p class="leading-relaxed text-base">Add a Jailor .</p>
+            <p class="leading-relaxed text-base">Add a Jailor</p>
             <a class="mt-3 text-indigo-500 inline-flex items-center"href="./jailor.php">Add Jailor
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -65,7 +65,7 @@
           </div>
           <div class="flex-grow pl-6">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Update Prisoner Out date</h2>
-            <p class="leading-relaxed text-base">Update information of Prisoner date_out</p>
+            <p class="leading-relaxed text-base">Update information of Prisoner Date Out</p>
             <a class="mt-3 text-indigo-500 inline-flex items-center " href="./prisoner_dateout.php">Update Information
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -97,7 +97,7 @@
             </div>
             <div class="flex-grow pl-6">
               <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View Visitors</h2>
-              <p class="leading-relaxed text-base">Check out all the visitors till now.</p>
+              <p class="leading-relaxed text-base">Check out all the visitors till now</p>
               <a class="mt-3 text-indigo-500 inline-flex items-center" href="./visitor_view.php">View Visitors
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -131,7 +131,7 @@
             </div>
             <div class="flex-grow pl-6">
               <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View Prisoners</h2>
-              <p class="leading-relaxed text-base">View all the prisoners with section id</p>
+              <p class="leading-relaxed text-base">View all the prisoners with section ID</p>
               <a class="mt-3 text-indigo-500 inline-flex items-center" href="./prisoner_view.php">View Prisoners
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -168,7 +168,7 @@
             </div>
             <div class="flex-grow pl-6">
               <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View Jailor</h2>
-              <p class="leading-relaxed text-base">View all the unassigned Jailors  </p>
+              <p class="leading-relaxed text-base">View all the assigned Jailors</p>
               <a class="mt-3 text-indigo-500 inline-flex items-center" href="./jailor_view.php">View Jailors 
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -204,7 +204,7 @@
           </div>
           <div class="flex-grow pl-6">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Prisoner Behaviour Analyser</h2>
-            <p class="leading-relaxed text-base">Analyse the Behaviour of a prisoner depending on his/her nature and more parameters  </p>
+            <p class="leading-relaxed text-base">Analyse the Behaviour of a prisoner depending on his/her nature and more parameters</p>
             <a class="mt-3 text-indigo-500 inline-flex items-center" href="https://kartikeyarawat47.pythonanywhere.com/">Prisoner Behaviour Analyser 
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -221,7 +221,7 @@
         </div>
         <div class="flex-grow pl-6">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View Sections</h2>
-          <p class="leading-relaxed text-base">View all the sections with Jailor id  </p>
+          <p class="leading-relaxed text-base">View all the sections with Jailor ID</p>
           <a class="mt-3 text-indigo-500 inline-flex items-center" href="./section_view.php">View Sections
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
