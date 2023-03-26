@@ -29,7 +29,7 @@ echo'
         Prisoner Section Update
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-          The Jailor can update information related to The Prisoner and their Sections
+          The Jailor can update Prisoner Section
         </p>
       </div>
     </div>

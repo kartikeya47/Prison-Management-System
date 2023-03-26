@@ -20,7 +20,7 @@
           View all Prisoners!
           </h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            The Officer can view all Prisoners in the Jail!
+            Can view all Prisoners in the Jail!
           </p>
         </div>
       </div>
