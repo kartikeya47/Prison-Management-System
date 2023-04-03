@@ -75,6 +75,7 @@
                 <th class="w-1/4 px-5 py-2">Section ID</th>
                 <th class="w-1/4 px-5 py-2">Status</th>
                 <th class="w-1/4 px-5 py-2">Budget</th>
+                <th class="w-1/4 px-5 py-2">Behavior</th>
 
 
               </tr>
@@ -98,6 +99,8 @@
                 <td class="border px-4 py-2"><?php echo$row['Status_inout']."<br>";?></td>
 
                 <td class="border px-4 py-2"><?php echo$row['Budget']."<br>";?></td>
+
+                <td class="border px-4 py-2"><?php echo$row['Behavior']."<br>";?></td>
 
               </tr>
              
