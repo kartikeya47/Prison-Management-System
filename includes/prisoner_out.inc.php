@@ -8,14 +8,10 @@
             exit();
         }else{
           $sql1="UPDATE Prisoner SET Status_inout='OUT' WHERE Prisoner_id='$prisoner_id' ";
-          $sql2="SELECT * FROM Prisoner WHERE Prisoner_id='$prisoner_id' ";
-          $result=mysqli_query($conn,$sql2);
-          $resultCheck=mysqli_num_rows($result);
-          if($resultCheck === 0){
+          if(!mysqli_query($conn,$sql1)){
             header("Location: ../prisoner_out.php?error=sqlerror");
             exit();
         }else{
-            mysqli_query($conn,$sql1);
             header("Location: ../prisoner_out.php?error=success");
               exit();
         }

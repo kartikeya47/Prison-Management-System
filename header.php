@@ -48,14 +48,21 @@ session_start();
                                 if(isset($_SESSION['userUidOfficer'])){
                                       echo'<li><a href="includes/logout.inc.php?logout=officer" class="hover:text-indigo-500">Logout</a></li>
                                       <li><a href="./officer-dashboard.php" class="hover:text-indigo-500">Officer dashboard</a></li>
+                                      <li><a href="./visitor-dashboard.php" class="hover:text-indigo-500">Visitor dashboard</a></li>
+                                      <li><a href=https://kartikeyarawat47.pythonanywhere.com/ class="hover:text-indigo-500">Prisoner Behaviour Analyser</a></li>
                                     <li><a href="./aboutus.php" class="hover:text-indigo-500">About Us</a></li>';
                                       
                                 }else if(isset($_SESSION['userUidJailor'])){
                                     echo'<li><a href="includes/logout.inc.php?logout=jailor" class="hover:text-indigo-500">Logout</a></li>
-                                         <li><a href="./jailor-dashboard.php" class="hover:text-indigo-500">Jailor dashboard</a></li>   
+                                         <li><a href="./jailor-dashboard.php" class="hover:text-indigo-500">Jailor dashboard</a></li>
+                                         <li><a href="./visitor-dashboard.php" class="hover:text-indigo-500">Visitor dashboard</a></li>
+                                         <li><a href=https://kartikeyarawat47.pythonanywhere.com/ class="hover:text-indigo-500">Prisoner Behaviour Analyser</a></li>
                                          <li><a href="./aboutus.php" class="hover:text-indigo-500">About Us</a></li>';
                                 }else if(isset($_SESSION['userUidVisitor'])){
                                     echo'<li><a href="includes/logout.inc.php?logout=jailor" class="hover:text-indigo-500">Logout</a></li>
+                                        <li><a href="./officer-dashboard.php" class="hover:text-indigo-500">Officer dashboard</a></li>
+                                        <li><a href="./jailor-dashboard.php" class="hover:text-indigo-500">Jailor dashboard</a></li>
+                                        <li><a href=https://kartikeyarawat47.pythonanywhere.com/ class="hover:text-indigo-500">Prisoner Behaviour Analyser</a></li>
                                         <li><a href="./aboutus.php" class="hover:text-indigo-500">About Us</a></li>';
                                 }else{
                                     echo'<li><a href="./aboutus.php" class="hover:text-indigo-500">About Us</a></li>';

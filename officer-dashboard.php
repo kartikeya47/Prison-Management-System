@@ -73,6 +73,21 @@
             </a>
           </div>
         </div>
+        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+        </div>
+        <div class="flex-grow pl-6">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Update IPC</h2>
+          <p class="leading-relaxed text-base">Update information of Prisoner Crime</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center " href="./ipc_update.php">Update Information
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
   
           <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
             <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
@@ -126,6 +141,25 @@
             
           </div>
   
+        
+  
+          <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow pl-6">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View Crime Details </h2>
+              <p class="leading-relaxed text-base">View all the Crime details of prisoners</p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center" href="./crime_view.php">View Details
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            
+          </div>
           <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
             <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
@@ -143,7 +177,42 @@
             </div>
             
           </div>
+
+          <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+      <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+        </svg>
+      </div>
+      <div class="flex-grow pl-6">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Update Prisoner Budget</h2>
+        <p class="leading-relaxed text-base">Update Prisoner Budget according to their Behaviour</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center" href="./budget.php">Update Prisoner Budget
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+
+      </div>
   
+          <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+          <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow pl-6">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Prisoner Behaviour Analyser</h2>
+            <p class="leading-relaxed text-base">Analyse the Behaviour of a prisoner depending on his/her nature and more parameters</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center" href="https://kartikeyarawat47.pythonanywhere.com/">Prisoner Behaviour Analyser 
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          
+        </div>
         <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
         <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
@@ -161,6 +230,24 @@
         </div>
         
       </div>
+  
+      <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+      <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+        </svg>
+      </div>
+      <div class="flex-grow pl-6">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View IPC</h2>
+        <p class="leading-relaxed text-base">View all the important IPC with their descriptions</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center" href="./ipc_view.php">View IPC
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    
+    </div>
 
     <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
       <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
