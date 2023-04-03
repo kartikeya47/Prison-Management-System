@@ -8,10 +8,14 @@
             exit();
         }else{
           $sql1="UPDATE visit_approval SET status='Approved' WHERE vuname='$vuname' ";
-          if(!mysqli_query($conn,$sql1)){
+          $sql2 ="SELECT * FROM visit_approval WHERE vuname='$vuname' ";
+          $result=mysqli_query($conn,$sql2);
+          $resultCheck=mysqli_num_rows($result);
+          if($resultCheck === 0){
             header("Location: ../visit_approval.php?error=sqlerror");
             exit();
         }else{
+            mysqli_query($conn,$sql1);
             header("Location: ../visit_approval.php?error=success");
               exit();
         }

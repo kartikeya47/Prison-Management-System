@@ -8,7 +8,7 @@ if(isset($_SESSION['userUidVisitor'])){
        </h2>';
     }elseif($_GET['error']=="sqlerror"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
-      sql database connection error!!       
+      Prisoner was not Present!!       
       </h2>';
     }elseif($_GET['error']=="success"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-green-600">
@@ -23,7 +23,7 @@ if(isset($_SESSION['userUidVisitor'])){
 
 echo'
   <div class="flex flex-col h-screen">
-  <form action="includes/leave_apply.inc.php" method="POST">
+  <form action="includes/visit_apply.inc.php" method="POST">
 
   <section class="text-gray-700 body-font relative flex-grow">
     <div class="container px-5 my-5 mx-auto">
@@ -78,7 +78,7 @@ echo'
           
           <div class="p-5 w-full">
             <button
-            name="apply_leave" type="submit"
+            name="apply_visit" type="submit"
               class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >
               Submit
