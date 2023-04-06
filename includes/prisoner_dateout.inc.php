@@ -14,11 +14,16 @@
                     $sql="UPDATE Prisoner SET Date_out='$out_date' WHERE Prisoner_id='$pid' ";
                     $sql2 ="SELECT * FROM Prisoner WHERE Prisoner_id='$pid' ";
                     $result=mysqli_query($conn,$sql2);
+                    $row=mysqli_fetch_assoc($result);
                     $resultCheck=mysqli_num_rows($result);
                     if($resultCheck === 0){
                         header("Location: ../prisoner_dateout.php?error=sqlerror");
                         exit();
-                    }else{
+                    }elseif($row['Status_inout'] === 'OUT'){
+                        header("Location: ../prisoner_dateout.php?error=outerror");
+                        exit();
+                    }
+                    else{
                         mysqli_query($conn,$sql);
                         header("Location: ../prisoner_dateout.php?error=success");
                     

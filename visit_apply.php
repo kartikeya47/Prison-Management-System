@@ -14,6 +14,10 @@ if(isset($_SESSION['userUidVisitor'])){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-green-600">
      Visitor Visit Request Applied Sucessfully!!       
       </h2>';
+    }elseif($_GET['error']=="outerror"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      Prisoner is Already Outside the Prison!!       
+      </h2>';
     }elseif($_GET['error']=="reserror"){
         echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
        Not Valid!!       

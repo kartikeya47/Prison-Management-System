@@ -1,4 +1,5 @@
 <?php
+    $row;
     if(isset($_POST['IPC'])){
         require './dbh.inc.php';
         $IPC = $_POST['IPC'];
@@ -7,10 +8,14 @@
         $sql="INSERT INTO Commits(IPC,Prisoner_id) VALUES (?,?)";
         $sql2 ="SELECT * FROM Prisoner WHERE Prisoner_id='$prisoner_id' ";
         $result=mysqli_query($conn,$sql2);
+        $row=mysqli_fetch_assoc($result);
         $resultCheck=mysqli_num_rows($result);
         $stmt=mysqli_stmt_init($conn);
         if($resultCheck === 0){
             header("Location: ../ipc_update.php?error=sqlerror");
+            exit();
+        }elseif($row['Status_inout'] === 'OUT'){
+            header("Location: ../ipc_update.php?error=outerror");
             exit();
         }
         else{

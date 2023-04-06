@@ -7,13 +7,16 @@
         $sql="UPDATE prisoner SET Budget = Budget + ? WHERE Prisoner_id = ?";
         $sql2 ="SELECT * FROM Prisoner WHERE Prisoner_id='$prisoner_id' ";
         $result=mysqli_query($conn,$sql2);
+        $row=mysqli_fetch_assoc($result);
         $resultCheck=mysqli_num_rows($result);
         $stmt=mysqli_stmt_init($conn);
         if($resultCheck === 0){
             header("Location: ../budget.php?error=sqlerror");
             exit();
-        }
-        else{
+        }elseif($row['Status_inout'] === 'OUT'){
+            header("Location: ../budget.php?error=outerror");
+            exit();
+        }else{
             mysqli_stmt_prepare($stmt,$sql);
             mysqli_stmt_bind_param($stmt,"ii",$amt,$prisoner_id);
             $result = mysqli_stmt_execute($stmt);
