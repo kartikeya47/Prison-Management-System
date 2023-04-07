@@ -52,6 +52,10 @@ session_start();
                                     echo'<li><a href="./logout.inc.php?logout=jailor" class="hover:text-indigo-500">Logout</a></li>
                                          <li><a href="../jailor-dashboard.php" class="hover:text-indigo-500">Jailor dashboard</a></li>
                                          <li><a href="../aboutus.php" class="hover:text-indigo-500">About Us</a></li>';
+                                }else if(isset($_SESSION['userUidVisitor'])){
+                                    echo'<li><a href="./logout.inc.php?logout=visitor" class="hover:text-indigo-500">Logout</a></li>
+                                         <li><a href="../visitor-dashboard.php" class="hover:text-indigo-500">Visitor dashboard</a></li>
+                                         <li><a href="../aboutus.php" class="hover:text-indigo-500">About Us</a></li>';
                                 }
                             
                             ?>
@@ -101,6 +105,10 @@ session_start();
                                 }else if(isset($_SESSION['userUidJailor'])){
                                     echo'<li><a class="my-4 inline-block active font-bold" href="./logout.inc.php?logout=jailor" class="hover:text-indigo-500">Logout</a></li>
                                     <li><a class="my-4 inline-block active font-bold" href="../jailor-dashboard.php" class="hover:text-indigo-500">Jailor dashboard</a></li>
+                                  <li><a href="../aboutus.php" class="hover:text-indigo-500">Aboutus</a></li>';
+                                }else if(isset($_SESSION['userUidVisitor'])){
+                                    echo'<li><a class="my-4 inline-block active font-bold" href="./logout.inc.php?logout=visitor" class="hover:text-indigo-500">Logout</a></li>
+                                    <li><a class="my-4 inline-block active font-bold" href="../visitor-dashboard.php" class="hover:text-indigo-500">Visitor dashboard</a></li>
                                   <li><a href="../aboutus.php" class="hover:text-indigo-500">Aboutus</a></li>';
                                 }              
                             ?>

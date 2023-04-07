@@ -10,6 +10,14 @@ if(isset($_SESSION['userUidOfficer'])){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
       Prisoner was not Present!!       
       </h2>';
+    }elseif($_GET['error']=="sqlerror1"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      IPC does not Exist in the System!!       
+      </h2>';
+    }elseif($_GET['error']=="sqlerror2"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      IPC has Been Already Applied to the Prisoner!!       
+      </h2>';
     }elseif($_GET['error']=="outerror"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
       Prisoner is Outside the Prison!!       

@@ -8,7 +8,7 @@ if(isset($_SESSION['userUidVisitor'])){
        </h2>';
     }elseif($_GET['error']=="sqlerror"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
-      Prisoner was not Present!!       
+      You Cannot Visit a Random Prisoner!!       
       </h2>';
     }elseif($_GET['error']=="success"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-green-600">
@@ -54,7 +54,7 @@ echo'
             required
               name="vuname"
               class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-              placeholder="Username"
+              placeholder="Your Username"
             />
               
             </div>

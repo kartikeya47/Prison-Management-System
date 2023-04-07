@@ -14,12 +14,16 @@
         $sql3 ="SELECT * FROM Prisoner WHERE Prisoner_id='$prisoner_id' ";
         $sql4 ="SELECT * FROM visitor WHERE Aadhaar='$aadhaar' ";
         $sql5 ="SELECT * FROM visitor WHERE User='$username' ";
+        $sql6 ="SELECT * FROM Prisoner WHERE Prisoner_id='$prisoner_id' ";
         $result3=mysqli_query($conn,$sql3);
         $result4=mysqli_query($conn,$sql4);
         $result5=mysqli_query($conn,$sql5);
+        $result6=mysqli_query($conn,$sql6);
         $resultCheck0=mysqli_num_rows($result3);
         $resultCheck1=mysqli_num_rows($result4);
         $resultCheck2=mysqli_num_rows($result5);
+        $resultCheck3=mysqli_num_rows($result6);
+        $row=mysqli_fetch_assoc($result6);
         $stmt = mysqli_stmt_init($conn);
         if(!preg_match("/^[2-9]{1}[0-9]{3}\\s[0-9]{4}\\s[0-9]{4}$/", $aadhaar)){
             header("Location: ../visitor.php?error=invalidaadhaar");
@@ -32,6 +36,9 @@
             exit();
         }elseif($resultCheck2 > 0){
             header("Location: ../visitor.php?error=sqlerror2");
+            exit();
+        }elseif($row['Status_inout'] === 'OUT'){
+            header("Location: ../visitor.php?error=outerror");
             exit();
         }else{
             mysqli_stmt_prepare($stmt,$sql_input);

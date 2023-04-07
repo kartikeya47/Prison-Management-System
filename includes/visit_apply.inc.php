@@ -6,9 +6,11 @@
         $status = 'Not Approved';
 
         $sql="INSERT INTO visit_approval(pid,vuname,status) VALUES (?,?,?)";
-        $sql2 ="SELECT * FROM Prisoner WHERE Prisoner_id='$prisoner_id' ";
+        $sql2 ="SELECT * FROM visitor WHERE Prisoner_id='$prisoner_id' AND User='$vuname' ";
+        $sql3 ="SELECT * FROM Prisoner WHERE Prisoner_id='$prisoner_id' ";
         $result=mysqli_query($conn,$sql2);
-        $row=mysqli_fetch_assoc($result);
+        $result1=mysqli_query($conn,$sql3);
+        $row=mysqli_fetch_assoc($result1);
         $resultCheck=mysqli_num_rows($result);
         $stmt=mysqli_stmt_init($conn);
         if($resultCheck === 0){
