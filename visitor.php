@@ -8,7 +8,19 @@ if(isset($_SESSION['userUidOfficer'])){
        </h2>';
     }elseif($_GET['error']=="sqlerror"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
-      sql database connection error!!       
+      Visitor With Same Aadhaar Number Already Exists!!       
+      </h2>';
+    }elseif($_GET['error']=="invalidaadhaar"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      Invalid Aadhaar Number Entered!!       
+      </h2>';
+    }elseif($_GET['error']=="sqlerror3"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      Prisoner was not Present!!       
+      </h2>';
+    }elseif($_GET['error']=="sqlerror2"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      Visitor With Same Username Already Exists!!       
       </h2>';
     }elseif($_GET['error']=="reserror"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">

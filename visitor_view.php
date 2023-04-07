@@ -32,7 +32,6 @@
                 <th class="w-1/8 px-8 py-2">Last Name</th>
                 <th class="w-1/8 px-8 py-2">Visit Date</th>
                 <th class="w-1/8 px-8 py-2">Time Slot</th>
-                <th class="w-1/8 px-8 py-2">Prisoner ID</th>
 
               </tr>
             </thead>
@@ -47,7 +46,6 @@
                 <td class="border px-8 py-2"><?php echo$row['Last_name']."<br>";?></td>
                 <td class="border px-8 py-2"><?php echo$row['Date_visit']."<br>";?></td>
                 <td class="border px-8 py-2"><?php echo$row['Time_slot']."<br>";?></td>
-                <td class="border px-8 py-2"><?php echo"PRI".$row['Prisoner_id']."<br>";?></td>
 
               </tr>
              

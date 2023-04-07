@@ -8,7 +8,7 @@ require "./header.php";
            </h2>';
         }elseif($_GET['error']=="sqlerror"){
           echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
-          sql database connection error!!       
+          Section was not Present!!       
           </h2>';
         }
 

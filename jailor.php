@@ -6,13 +6,21 @@ if(isset($_SESSION['userUidOfficer'])){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
        Empty fields!!       
        </h2>';
+    }elseif($_GET['error']=="sameuserexistserror"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      Jailor With Same Username Already Exists!!       
+      </h2>';
     }elseif($_GET['error']=="sqlerror"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
-      sql database connection error!!       
+      Section Does Not Exist!!       
+      </h2>';
+    }elseif($_GET['error']=="mobnumerror"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      Invalid Mobile Number Entered!!       
       </h2>';
     }elseif($_GET['error']=="passwordnotmatched"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
-      Reenter the correct password!!       
+      Passwords does not Match!!       
       </h2>';
     }
 

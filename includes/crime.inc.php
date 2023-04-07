@@ -22,16 +22,17 @@
                 
                 $sql2="INSERT INTO Prisoner(First_name,Last_name,Date_in,Dob,Height,Date_out,Address,Section_id,Status_inout,Budget) VALUES
                 (?,?,?,?,?,?,?,?,?,?) ";
+                $sql3 ="SELECT * FROM section WHERE Section_id='$section_id' ";
                 $stmt2=mysqli_stmt_init($conn);
-                if(!mysqli_stmt_prepare($stmt2,$sql2)){
+                $resultt=mysqli_query($conn,$sql3);
+                $resultCheck=mysqli_num_rows($resultt);
+                if($resultCheck === 0){
                     header("Location: ../crime.php?error=sqlerror");
                     exit();
                 }else{
-                   
+                    mysqli_stmt_prepare($stmt2,$sql2);
                     mysqli_stmt_bind_param($stmt2,"ssssissisi",$f_name,$l_name,$date_in,$dob,$height,$date_out,$addr,$section_id,$status_inout,$budget);
                     mysqli_stmt_execute($stmt2);
-
-                    //exit();
 
                 }
                 //getting the prioner id from the latest entry in the prisoner table;

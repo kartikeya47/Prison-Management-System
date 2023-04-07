@@ -15,19 +15,27 @@
       if(empty($f_name)||empty($l_name)||empty($mob_number)||empty($username)||empty($password)||empty($cfmpassword)){   
         header("Location: ../jailor.php?error=emptyfields");
         exit();
-    } else if(!preg_match("/^[a-zA-Z0-9]*$/", $username)){
+    }else if(!preg_match("/^[a-zA-Z0-9]*$/", $username)){
       header("Location: ../jailor.php?error=invaliduid&uid=".$username);
        exit();
-   } else if($password !== $cfmpassword){
+   }else if(!preg_match("/^(\+\d{1,3}[- ]?)?\d{10}$/", $mob_number)){
+    header("Location: ../jailor.php?error=mobnumerror");
+     exit();
+ }else if($password !== $cfmpassword){
     header("Location: ../jailor.php?error=passwordnotmatched&uid=".$username);
     exit();
   } else{
     $sql="SELECT Jailor_uname FROM Jailor WHERE Jailor_uname=?";
+    $sql3 ="SELECT * FROM section WHERE Section_id='$sec_id' AND Section_name='$sec_name' ";
+    $result3=mysqli_query($conn,$sql3);
+    $resultCheck=mysqli_num_rows($result3);
     $stmt=mysqli_stmt_init($conn);
-      if(!mysqli_stmt_prepare($stmt,$sql)){
+      if($resultCheck === 0){
         header("Location: ../jailor.php?error=sqlerror");
         exit();
         } else{
+          mysqli_stmt_prepare($stmt,$sql);
+          mysqli_stmt_prepare($stmt,$sql);
           mysqli_stmt_bind_param($stmt,"s",$username);
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_store_result($stmt);
